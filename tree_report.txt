@@ -1,0 +1,569 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 15 files
+Detected 23 issues that require attention
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+File: /Volumes/Stoage/hourglasstensorlfow/tf_1/predictClass.py
+--------------------------------------------------------------------------------
+/Volumes/Stoage/hourglasstensorlfow/tf_1/predictClass.py:1068:31: ERROR: Using member tf.contrib.framework.get_trainable_variables in deprecated module tf.contrib. tf.contrib.framework.get_trainable_variables cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+--------------------------------------------------------------------------------
+File: /Volumes/Stoage/hourglasstensorlfow/tf_1/datagen.py
+--------------------------------------------------------------------------------
+/Volumes/Stoage/hourglasstensorlfow/tf_1/datagen.py:197:2: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+/Volumes/Stoage/hourglasstensorlfow/tf_1/datagen.py:198:2: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+--------------------------------------------------------------------------------
+File: /Volumes/Stoage/hourglasstensorlfow/tf_1/hourglass_tiny.py
+--------------------------------------------------------------------------------
+/Volumes/Stoage/hourglasstensorlfow/tf_1/hourglass_tiny.py:273:5: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+/Volumes/Stoage/hourglasstensorlfow/tf_1/hourglass_tiny.py:395:12: ERROR: Using member tf.contrib.layers.max_pool2d in deprecated module tf.contrib. tf.contrib.layers.max_pool2d cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+/Volumes/Stoage/hourglasstensorlfow/tf_1/hourglass_tiny.py:523:10: ERROR: Using member tf.contrib.layers.batch_norm in deprecated module tf.contrib. tf.contrib.layers.batch_norm cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+/Volumes/Stoage/hourglasstensorlfow/tf_1/hourglass_tiny.py:540:11: ERROR: Using member tf.contrib.layers.batch_norm in deprecated module tf.contrib. tf.contrib.layers.batch_norm cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+/Volumes/Stoage/hourglasstensorlfow/tf_1/hourglass_tiny.py:547:14: ERROR: Using member tf.contrib.layers.batch_norm in deprecated module tf.contrib. tf.contrib.layers.batch_norm cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+/Volumes/Stoage/hourglasstensorlfow/tf_1/hourglass_tiny.py:550:14: ERROR: Using member tf.contrib.layers.batch_norm in deprecated module tf.contrib. tf.contrib.layers.batch_norm cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+/Volumes/Stoage/hourglasstensorlfow/tf_1/hourglass_tiny.py:554:14: ERROR: Using member tf.contrib.layers.batch_norm in deprecated module tf.contrib. tf.contrib.layers.batch_norm cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+/Volumes/Stoage/hourglasstensorlfow/tf_1/hourglass_tiny.py:601:10: ERROR: Using member tf.contrib.layers.max_pool2d in deprecated module tf.contrib. tf.contrib.layers.max_pool2d cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+/Volumes/Stoage/hourglasstensorlfow/tf_1/hourglass_tiny.py:664:9: ERROR: Using member tf.contrib.layers.batch_norm in deprecated module tf.contrib. tf.contrib.layers.batch_norm cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+/Volumes/Stoage/hourglasstensorlfow/tf_1/hourglass_tiny.py:670:10: ERROR: Using member tf.contrib.layers.max_pool2d in deprecated module tf.contrib. tf.contrib.layers.max_pool2d cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+/Volumes/Stoage/hourglasstensorlfow/tf_1/hourglass_tiny.py:735:10: ERROR: Using member tf.contrib.layers.max_pool2d in deprecated module tf.contrib. tf.contrib.layers.max_pool2d cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+/Volumes/Stoage/hourglasstensorlfow/tf_1/hourglass_tiny.py:774:11: ERROR: Using member tf.contrib.layers.max_pool2d in deprecated module tf.contrib. tf.contrib.layers.max_pool2d cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+/Volumes/Stoage/hourglasstensorlfow/tf_1/hourglass_tiny.py:777:11: ERROR: Using member tf.contrib.layers.max_pool2d in deprecated module tf.contrib. tf.contrib.layers.max_pool2d cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+--------------------------------------------------------------------------------
+File: /Volumes/Stoage/hourglasstensorlfow/tf_1/yolo_net.py
+--------------------------------------------------------------------------------
+/Volumes/Stoage/hourglasstensorlfow/tf_1/yolo_net.py:5:7: ERROR: Using member tf.contrib.slim in deprecated module tf.contrib. tf.contrib.slim cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+--------------------------------------------------------------------------------
+File: /Volumes/Stoage/hourglasstensorlfow/tf_1/v0.1/hourglassModel.py
+--------------------------------------------------------------------------------
+/Volumes/Stoage/hourglasstensorlfow/tf_1/v0.1/hourglassModel.py:42:13: ERROR: Using member tf.contrib.layers.max_pool2d in deprecated module tf.contrib. tf.contrib.layers.max_pool2d cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+/Volumes/Stoage/hourglasstensorlfow/tf_1/v0.1/hourglassModel.py:81:10: ERROR: Using member tf.contrib.layers.max_pool2d in deprecated module tf.contrib. tf.contrib.layers.max_pool2d cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+--------------------------------------------------------------------------------
+File: /Volumes/Stoage/hourglasstensorlfow/tf_1/v0.1/layers.py
+--------------------------------------------------------------------------------
+/Volumes/Stoage/hourglasstensorlfow/tf_1/v0.1/layers.py:54:9: ERROR: Using member tf.contrib.layers.batch_norm in deprecated module tf.contrib. tf.contrib.layers.batch_norm cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+/Volumes/Stoage/hourglasstensorlfow/tf_1/v0.1/layers.py:70:11: ERROR: Using member tf.contrib.layers.batch_norm in deprecated module tf.contrib. tf.contrib.layers.batch_norm cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+/Volumes/Stoage/hourglasstensorlfow/tf_1/v0.1/layers.py:72:11: ERROR: Using member tf.contrib.layers.batch_norm in deprecated module tf.contrib. tf.contrib.layers.batch_norm cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+/Volumes/Stoage/hourglasstensorlfow/tf_1/v0.1/layers.py:75:11: ERROR: Using member tf.contrib.layers.batch_norm in deprecated module tf.contrib. tf.contrib.layers.batch_norm cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+================================================================================
+Detailed log follows:
+
+================================================================================
+================================================================================
+Input tree: '/Volumes/Stoage/hourglasstensorlfow/tf_1'
+================================================================================
+--------------------------------------------------------------------------------
+Processing file '/Volumes/Stoage/hourglasstensorlfow/tf_1/train_launcher.py'
+ outputting to '/Volumes/Stoage/hourglasstensorlfow/tf_2/train_launcher.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/Volumes/Stoage/hourglasstensorlfow/tf_1/predictClass.py'
+ outputting to '/Volumes/Stoage/hourglasstensorlfow/tf_2/predictClass.py'
+--------------------------------------------------------------------------------
+
+178:7: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+178:7: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+188:9: INFO: Renamed 'tf.arg_max' to 'tf.argmax'
+191:44: INFO: Changed tf.to_int64 call to tf.cast(..., dtype=tf.int64).
+191:73: INFO: Changed tf.to_int64 call to tf.cast(..., dtype=tf.int64).
+197:10: INFO: Renamed 'tf.arg_max' to 'tf.argmax'
+198:40: INFO: Changed tf.to_int64 call to tf.cast(..., dtype=tf.int64).
+198:69: INFO: Changed tf.to_int64 call to tf.cast(..., dtype=tf.int64).
+206:8: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+206:8: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+1068:16: INFO: Renamed 'tf.train.Saver' to 'tf.compat.v1.train.Saver'
+1068:31: ERROR: Using member tf.contrib.framework.get_trainable_variables in deprecated module tf.contrib. tf.contrib.framework.get_trainable_variables cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/Volumes/Stoage/hourglasstensorlfow/tf_1/config.py'
+ outputting to '/Volumes/Stoage/hourglasstensorlfow/tf_2/config.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/Volumes/Stoage/hourglasstensorlfow/tf_1/timer.py'
+ outputting to '/Volumes/Stoage/hourglasstensorlfow/tf_2/timer.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/Volumes/Stoage/hourglasstensorlfow/tf_1/datagen.py'
+ outputting to '/Volumes/Stoage/hourglasstensorlfow/tf_2/datagen.py'
+--------------------------------------------------------------------------------
+
+197:2: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+198:2: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/Volumes/Stoage/hourglasstensorlfow/tf_1/inference.py'
+ outputting to '/Volumes/Stoage/hourglasstensorlfow/tf_2/inference.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/Volumes/Stoage/hourglasstensorlfow/tf_1/filters.py'
+ outputting to '/Volumes/Stoage/hourglasstensorlfow/tf_2/filters.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/Volumes/Stoage/hourglasstensorlfow/tf_1/hourglass_tiny.py'
+ outputting to '/Volumes/Stoage/hourglasstensorlfow/tf_2/hourglass_tiny.py'
+--------------------------------------------------------------------------------
+
+138:8: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+138:8: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+140:15: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+142:20: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+144:18: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+156:8: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+156:8: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+158:17: INFO: Added keywords to args of function 'tf.reduce_mean'
+160:17: INFO: Added keywords to args of function 'tf.reduce_mean'
+164:8: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+164:8: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+168:8: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+168:8: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+170:8: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+170:8: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+171:14: INFO: tf.train.exponential_decay requires manual check. To use learning rate decay schedules with TensorFlow 2.0, switch to the schedules in `tf.keras.optimizers.schedules`.
+
+171:14: INFO: Renamed 'tf.train.exponential_decay' to 'tf.compat.v1.train.exponential_decay'
+175:8: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+175:8: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+176:19: INFO: Renamed 'tf.train.RMSPropOptimizer' to 'tf.compat.v1.train.RMSPropOptimizer'
+179:8: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+179:8: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+180:22: INFO: Renamed 'tf.get_collection' to 'tf.compat.v1.get_collection'
+180:40: INFO: Renamed 'tf.GraphKeys' to 'tf.compat.v1.GraphKeys'
+185:14: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+189:8: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+189:8: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+190:4: INFO: tf.summary.scalar requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+190:4: INFO: Renamed 'tf.summary.scalar' to 'tf.compat.v1.summary.scalar'
+191:4: INFO: tf.summary.scalar requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+191:4: INFO: Renamed 'tf.summary.scalar' to 'tf.compat.v1.summary.scalar'
+192:8: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+192:8: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+194:5: INFO: tf.summary.scalar requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+194:5: INFO: Renamed 'tf.summary.scalar' to 'tf.compat.v1.summary.scalar'
+195:18: INFO: tf.summary.merge_all requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+195:18: INFO: Renamed 'tf.summary.merge_all' to 'tf.compat.v1.summary.merge_all'
+196:17: INFO: tf.summary.merge_all requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+196:17: INFO: Renamed 'tf.summary.merge_all' to 'tf.compat.v1.summary.merge_all'
+197:19: INFO: tf.summary.merge_all requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+197:19: INFO: Renamed 'tf.summary.merge_all' to 'tf.compat.v1.summary.merge_all'
+208:7: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+208:7: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+223:7: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+223:7: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+272:9: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+272:9: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+273:5: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+318:7: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+318:7: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+334:17: INFO: Added keywords to args of function 'tf.reduce_mean'
+357:17: INFO: Renamed 'tf.train.Saver' to 'tf.compat.v1.train.Saver'
+360:26: INFO: tf.summary.FileWriter requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+360:26: INFO: Renamed 'tf.summary.FileWriter' to 'tf.compat.v1.summary.FileWriter'
+360:67: INFO: Renamed 'tf.get_default_graph' to 'tf.compat.v1.get_default_graph'
+361:25: INFO: tf.summary.FileWriter requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+361:25: INFO: Renamed 'tf.summary.FileWriter' to 'tf.compat.v1.summary.FileWriter'
+368:17: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+378:17: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+386:7: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+386:7: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+387:8: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+387:8: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+389:11: INFO: Added keywords to args of function 'tf.pad'
+395:12: ERROR: Using member tf.contrib.layers.max_pool2d in deprecated module tf.contrib. tf.contrib.layers.max_pool2d cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+411:9: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+411:9: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+412:10: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+412:10: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+414:16: INFO: Renamed 'tf.layers.dropout' to 'tf.compat.v1.layers.dropout'
+424:11: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+424:11: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+426:17: INFO: Renamed 'tf.layers.dropout' to 'tf.compat.v1.layers.dropout'
+435:10: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+435:10: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+437:28: INFO: Renamed 'tf.layers.dropout' to 'tf.compat.v1.layers.dropout'
+448:9: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+448:9: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+449:10: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+449:10: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+451:16: INFO: Renamed 'tf.layers.dropout' to 'tf.compat.v1.layers.dropout'
+462:11: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+462:11: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+464:17: INFO: Renamed 'tf.layers.dropout' to 'tf.compat.v1.layers.dropout'
+473:10: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+473:10: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+475:28: INFO: Renamed 'tf.layers.dropout' to 'tf.compat.v1.layers.dropout'
+499:7: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+499:7: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+501:24: INFO: Changing tf.contrib.layers xavier initializer to a tf.compat.v1.keras.initializers.VarianceScaling and converting arguments.
+
+502:10: INFO: Added keywords to args of function 'tf.nn.conv2d'
+502:10: INFO: Renamed keyword argument for tf.nn.conv2d from filter to filters
+505:5: INFO: tf.summary.histogram requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+505:5: INFO: Renamed 'tf.summary.histogram' to 'tf.compat.v1.summary.histogram'
+520:7: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+520:7: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+521:24: INFO: Changing tf.contrib.layers xavier initializer to a tf.compat.v1.keras.initializers.VarianceScaling and converting arguments.
+
+522:10: INFO: Added keywords to args of function 'tf.nn.conv2d'
+522:10: INFO: Renamed keyword argument for tf.nn.conv2d from filter to filters
+523:10: ERROR: Using member tf.contrib.layers.batch_norm in deprecated module tf.contrib. tf.contrib.layers.batch_norm cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+526:5: INFO: tf.summary.histogram requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+526:5: INFO: Renamed 'tf.summary.histogram' to 'tf.compat.v1.summary.histogram'
+539:8: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+539:8: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+540:11: ERROR: Using member tf.contrib.layers.batch_norm in deprecated module tf.contrib. tf.contrib.layers.batch_norm cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+541:10: INFO: Added keywords to args of function 'tf.pad'
+545:8: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+545:8: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+546:9: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+546:9: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+547:14: ERROR: Using member tf.contrib.layers.batch_norm in deprecated module tf.contrib. tf.contrib.layers.batch_norm cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+549:9: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+549:9: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+550:14: ERROR: Using member tf.contrib.layers.batch_norm in deprecated module tf.contrib. tf.contrib.layers.batch_norm cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+551:11: INFO: Added keywords to args of function 'tf.pad'
+553:9: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+553:9: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+554:14: ERROR: Using member tf.contrib.layers.batch_norm in deprecated module tf.contrib. tf.contrib.layers.batch_norm cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+567:7: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+567:7: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+581:7: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+581:7: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+597:7: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+597:7: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+601:10: ERROR: Using member tf.contrib.layers.max_pool2d in deprecated module tf.contrib. tf.contrib.layers.max_pool2d cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+610:10: INFO: Changed tf.image.resize_nearest_neighbor call to tf.image.resize(..., method=tf.image.ResizeMethod.NEAREST_NEIGHBOR).
+610:50: INFO: Added keywords to args of function 'tf.shape'
+625:11: INFO: Renamed 'tf.arg_max' to 'tf.argmax'
+638:37: INFO: Changed tf.to_float call to tf.cast(..., dtype=tf.float32).
+638:73: INFO: Changed tf.to_float call to tf.cast(..., dtype=tf.float32).
+638:99: INFO: Changed tf.to_float call to tf.cast(..., dtype=tf.float32).
+650:8: INFO: Changed tf.to_float call to tf.cast(..., dtype=tf.float32).
+653:21: INFO: Changed tf.to_float call to tf.cast(..., dtype=tf.float32).
+664:9: ERROR: Using member tf.contrib.layers.batch_norm in deprecated module tf.contrib. tf.contrib.layers.batch_norm cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+668:7: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+668:7: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+670:10: ERROR: Using member tf.contrib.layers.max_pool2d in deprecated module tf.contrib. tf.contrib.layers.max_pool2d cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+671:11: INFO: Added keywords to args of function 'tf.pad'
+674:11: INFO: Added keywords to args of function 'tf.pad'
+676:14: INFO: Changed tf.image.resize_nearest_neighbor call to tf.image.resize(..., method=tf.image.ResizeMethod.NEAREST_NEIGHBOR).
+676:55: INFO: Added keywords to args of function 'tf.shape'
+680:7: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+680:7: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+683:9: INFO: Added keywords to args of function 'tf.pad'
+685:11: INFO: Added keywords to args of function 'tf.pad'
+686:25: INFO: Changing tf.contrib.layers xavier initializer to a tf.compat.v1.keras.initializers.VarianceScaling and converting arguments.
+
+691:12: INFO: Added keywords to args of function 'tf.nn.conv2d'
+691:12: INFO: Renamed keyword argument for tf.nn.conv2d from filter to filters
+693:12: INFO: Added keywords to args of function 'tf.nn.conv2d'
+693:12: INFO: Renamed keyword argument for tf.nn.conv2d from filter to filters
+704:7: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+704:7: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+712:11: INFO: Added keywords to args of function 'tf.pad'
+718:7: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+718:7: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+722:7: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+722:7: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+733:7: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+733:7: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+735:10: ERROR: Using member tf.contrib.layers.max_pool2d in deprecated module tf.contrib. tf.contrib.layers.max_pool2d cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+761:10: INFO: Changed tf.image.resize_nearest_neighbor call to tf.image.resize(..., method=tf.image.ResizeMethod.NEAREST_NEIGHBOR).
+761:49: INFO: Added keywords to args of function 'tf.shape'
+769:7: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+769:7: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+770:10: INFO: Added keywords to args of function 'tf.pad'
+774:11: ERROR: Using member tf.contrib.layers.max_pool2d in deprecated module tf.contrib. tf.contrib.layers.max_pool2d cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+777:11: ERROR: Using member tf.contrib.layers.max_pool2d in deprecated module tf.contrib. tf.contrib.layers.max_pool2d cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+788:7: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+788:7: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+790:9: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+790:9: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+796:12: INFO: Renamed 'tf.layers.dropout' to 'tf.compat.v1.layers.dropout'
+802:12: INFO: Renamed 'tf.layers.dropout' to 'tf.compat.v1.layers.dropout'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/Volumes/Stoage/hourglasstensorlfow/tf_1/yolo_net.py'
+ outputting to '/Volumes/Stoage/hourglasstensorlfow/tf_2/yolo_net.py'
+--------------------------------------------------------------------------------
+
+5:7: ERROR: Using member tf.contrib.slim in deprecated module tf.contrib. tf.contrib.slim cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+34:22: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+38:26: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+40:30: INFO: tf.losses.get_total_loss requires manual check. tf.losses have been replaced with object oriented versions in TF 2.0 and after. The loss function calls have been converted to compat.v1 for backward compatibility. Please update these calls to the TF 2.0 versions.
+40:30: INFO: Renamed 'tf.losses.get_total_loss' to 'tf.compat.v1.losses.get_total_loss'
+41:12: INFO: tf.summary.scalar requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+41:12: INFO: Renamed 'tf.summary.scalar' to 'tf.compat.v1.summary.scalar'
+50:13: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+53:52: INFO: tf.truncated_normal_initializer requires manual check. Initializers no longer have the dtype argument in the constructor or partition_info argument in the __call__ method.
+The calls have been converted to compat.v1 for safety (even though they may already have been correct).
+53:52: INFO: Renamed 'tf.truncated_normal_initializer' to 'tf.compat.v1.truncated_normal_initializer'
+54:52: INFO: Multiplying scale arg of tf.contrib.layers.l2_regularizer by half to what tf.keras.regularizers.l2 expects.
+
+55:22: INFO: Added keywords to args of function 'tf.pad'
+81:22: INFO: Added keywords to args of function 'tf.pad'
+85:22: INFO: Added keywords to args of function 'tf.transpose'
+103:13: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+108:21: INFO: Added keywords to args of function 'tf.transpose'
+114:21: INFO: Added keywords to args of function 'tf.transpose'
+135:13: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+149:75: INFO: Added keywords to args of function 'tf.transpose'
+152:33: INFO: Added keywords to args of function 'tf.transpose'
+157:26: INFO: Added keywords to args of function 'tf.reduce_max'
+157:26: INFO: Renamed keyword argument for tf.reduce_max from keep_dims to keepdims
+164:75: INFO: Added keywords to args of function 'tf.transpose'
+167:25: INFO: Added keywords to args of function 'tf.transpose'
+171:25: INFO: Added keywords to args of function 'tf.reduce_mean'
+171:40: INFO: Added keywords to args of function 'tf.reduce_sum'
+175:26: INFO: Added keywords to args of function 'tf.reduce_mean'
+175:41: INFO: Added keywords to args of function 'tf.reduce_sum'
+179:28: INFO: Added keywords to args of function 'tf.reduce_mean'
+179:43: INFO: Added keywords to args of function 'tf.reduce_sum'
+184:25: INFO: Added keywords to args of function 'tf.reduce_mean'
+184:40: INFO: Added keywords to args of function 'tf.reduce_sum'
+186:12: INFO: tf.losses.add_loss requires manual check. tf.losses have been replaced with object oriented versions in TF 2.0 and after. The loss function calls have been converted to compat.v1 for backward compatibility. Please update these calls to the TF 2.0 versions.
+186:12: INFO: Renamed 'tf.losses.add_loss' to 'tf.compat.v1.losses.add_loss'
+187:12: INFO: tf.losses.add_loss requires manual check. tf.losses have been replaced with object oriented versions in TF 2.0 and after. The loss function calls have been converted to compat.v1 for backward compatibility. Please update these calls to the TF 2.0 versions.
+187:12: INFO: Renamed 'tf.losses.add_loss' to 'tf.compat.v1.losses.add_loss'
+188:12: INFO: tf.losses.add_loss requires manual check. tf.losses have been replaced with object oriented versions in TF 2.0 and after. The loss function calls have been converted to compat.v1 for backward compatibility. Please update these calls to the TF 2.0 versions.
+188:12: INFO: Renamed 'tf.losses.add_loss' to 'tf.compat.v1.losses.add_loss'
+189:12: INFO: tf.losses.add_loss requires manual check. tf.losses have been replaced with object oriented versions in TF 2.0 and after. The loss function calls have been converted to compat.v1 for backward compatibility. Please update these calls to the TF 2.0 versions.
+189:12: INFO: Renamed 'tf.losses.add_loss' to 'tf.compat.v1.losses.add_loss'
+191:12: INFO: tf.summary.scalar requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+191:12: INFO: Renamed 'tf.summary.scalar' to 'tf.compat.v1.summary.scalar'
+192:12: INFO: tf.summary.scalar requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+192:12: INFO: Renamed 'tf.summary.scalar' to 'tf.compat.v1.summary.scalar'
+193:12: INFO: tf.summary.scalar requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+193:12: INFO: Renamed 'tf.summary.scalar' to 'tf.compat.v1.summary.scalar'
+194:12: INFO: tf.summary.scalar requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+194:12: INFO: Renamed 'tf.summary.scalar' to 'tf.compat.v1.summary.scalar'
+196:12: INFO: tf.summary.histogram requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+196:12: INFO: Renamed 'tf.summary.histogram' to 'tf.compat.v1.summary.histogram'
+197:12: INFO: tf.summary.histogram requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+197:12: INFO: Renamed 'tf.summary.histogram' to 'tf.compat.v1.summary.histogram'
+198:12: INFO: tf.summary.histogram requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+198:12: INFO: Renamed 'tf.summary.histogram' to 'tf.compat.v1.summary.histogram'
+199:12: INFO: tf.summary.histogram requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+199:12: INFO: Renamed 'tf.summary.histogram' to 'tf.compat.v1.summary.histogram'
+200:12: INFO: tf.summary.histogram requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+200:12: INFO: Renamed 'tf.summary.histogram' to 'tf.compat.v1.summary.histogram'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/Volumes/Stoage/hourglasstensorlfow/tf_1/v0.1/params.py'
+ outputting to '/Volumes/Stoage/hourglasstensorlfow/tf_2/v0.1/params.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/Volumes/Stoage/hourglasstensorlfow/tf_1/v0.1/tools.py'
+ outputting to '/Volumes/Stoage/hourglasstensorlfow/tf_2/v0.1/tools.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/Volumes/Stoage/hourglasstensorlfow/tf_1/v0.1/hourglassModel.py'
+ outputting to '/Volumes/Stoage/hourglasstensorlfow/tf_2/v0.1/hourglassModel.py'
+--------------------------------------------------------------------------------
+
+37:7: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+37:7: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+38:8: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+38:8: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+39:12: INFO: Added keywords to args of function 'tf.pad'
+42:13: ERROR: Using member tf.contrib.layers.max_pool2d in deprecated module tf.contrib. tf.contrib.layers.max_pool2d cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+53:8: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+53:8: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+54:9: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+54:9: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+58:15: INFO: Renamed 'tf.layers.dropout' to 'tf.compat.v1.layers.dropout'
+63:10: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+63:10: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+67:16: INFO: Renamed 'tf.layers.dropout' to 'tf.compat.v1.layers.dropout'
+71:9: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+71:9: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+74:28: INFO: Renamed 'tf.layers.dropout' to 'tf.compat.v1.layers.dropout'
+79:7: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+79:7: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+81:10: ERROR: Using member tf.contrib.layers.max_pool2d in deprecated module tf.contrib. tf.contrib.layers.max_pool2d cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+88:10: INFO: Changed tf.image.resize_nearest_neighbor call to tf.image.resize(..., method=tf.image.ResizeMethod.NEAREST_NEIGHBOR).
+88:50: INFO: Added keywords to args of function 'tf.shape'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/Volumes/Stoage/hourglasstensorlfow/tf_1/v0.1/process.py'
+ outputting to '/Volumes/Stoage/hourglasstensorlfow/tf_2/v0.1/process.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/Volumes/Stoage/hourglasstensorlfow/tf_1/v0.1/trainer.py'
+ outputting to '/Volumes/Stoage/hourglasstensorlfow/tf_2/v0.1/trainer.py'
+--------------------------------------------------------------------------------
+
+45:7: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+45:7: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+46:7: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+47:7: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+49:7: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+49:7: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+52:7: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+52:7: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+53:10: INFO: Added keywords to args of function 'tf.reduce_mean'
+55:7: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+55:7: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+56:13: INFO: Renamed 'tf.train.RMSPropOptimizer' to 'tf.compat.v1.train.RMSPropOptimizer'
+58:6: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+58:6: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+61:7: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+61:7: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+64:8: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+67:6: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+67:6: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+68:2: INFO: tf.summary.scalar requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+68:2: INFO: Renamed 'tf.summary.scalar' to 'tf.compat.v1.summary.scalar'
+69:21: INFO: tf.summary.merge_all requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+69:21: INFO: Renamed 'tf.summary.merge_all' to 'tf.compat.v1.summary.merge_all'
+70:6: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+70:6: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+72:10: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+76:11: INFO: Renamed 'tf.train.Saver' to 'tf.compat.v1.train.Saver'
+78:19: INFO: tf.summary.FileWriter requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+78:19: INFO: Renamed 'tf.summary.FileWriter' to 'tf.compat.v1.summary.FileWriter'
+78:64: INFO: Renamed 'tf.get_default_graph' to 'tf.compat.v1.get_default_graph'
+81:8: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+81:8: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+86:10: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+86:10: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+94:12: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+94:12: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file '/Volumes/Stoage/hourglasstensorlfow/tf_1/v0.1/layers.py'
+ outputting to '/Volumes/Stoage/hourglasstensorlfow/tf_2/v0.1/layers.py'
+--------------------------------------------------------------------------------
+
+32:6: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+32:6: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+33:23: INFO: Changing tf.contrib.layers xavier initializer to a tf.compat.v1.keras.initializers.VarianceScaling and converting arguments.
+
+34:9: INFO: Added keywords to args of function 'tf.nn.conv2d'
+34:9: INFO: Renamed keyword argument for tf.nn.conv2d from filter to filters
+36:3: INFO: tf.summary.histogram requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+36:3: INFO: Renamed 'tf.summary.histogram' to 'tf.compat.v1.summary.histogram'
+51:6: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+51:6: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+52:23: INFO: Changing tf.contrib.layers xavier initializer to a tf.compat.v1.keras.initializers.VarianceScaling and converting arguments.
+
+53:9: INFO: Added keywords to args of function 'tf.nn.conv2d'
+53:9: INFO: Renamed keyword argument for tf.nn.conv2d from filter to filters
+54:9: ERROR: Using member tf.contrib.layers.batch_norm in deprecated module tf.contrib. tf.contrib.layers.batch_norm cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+56:3: INFO: tf.summary.histogram requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+56:3: INFO: Renamed 'tf.summary.histogram' to 'tf.compat.v1.summary.histogram'
+69:6: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+69:6: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+70:11: ERROR: Using member tf.contrib.layers.batch_norm in deprecated module tf.contrib. tf.contrib.layers.batch_norm cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+72:11: ERROR: Using member tf.contrib.layers.batch_norm in deprecated module tf.contrib. tf.contrib.layers.batch_norm cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+73:8: INFO: Added keywords to args of function 'tf.pad'
+75:11: ERROR: Using member tf.contrib.layers.batch_norm in deprecated module tf.contrib. tf.contrib.layers.batch_norm cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+89:6: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+89:6: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+98:6: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+98:6: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+--------------------------------------------------------------------------------
+

@@ -42,48 +42,48 @@ if __name__ == '__main__':
 	with tf.device(GPU):
 		print('Creating Model')
 		t_start = time()
-		with tf.name_scope('inputs'):
-			x = tf.placeholder(tf.float32, [None, 256,256,3], name = 'x_train')
-			y = tf.placeholder(tf.float32, [params.nbStacks,None, 64,64, params.outDim], name= 'y_train')
+		with tf.compat.v1.name_scope('inputs'):
+			x = tf.compat.v1.placeholder(tf.float32, [None, 256,256,3], name = 'x_train')
+			y = tf.compat.v1.placeholder(tf.float32, [params.nbStacks,None, 64,64, params.outDim], name= 'y_train')
 		print('--Inputs : Done')
-		with tf.name_scope('model'):
+		with tf.compat.v1.name_scope('model'):
 			output = HourglassModel(params.nbStacks, params.nFeat, params.nModule, params.outDim, params.nLow, True, name = 'stacked_hourglass')
 		print('--Model : Done')
-		with tf.name_scope('loss'):
-			loss = tf.reduce_mean(tf.nn.sigmoid_cross_entropy_with_logits(logits=output, labels= y), name = 'cross_entropy_loss') *4096 * params.nbStacks * params.batch_size
+		with tf.compat.v1.name_scope('loss'):
+			loss = tf.reduce_mean(input_tensor=tf.nn.sigmoid_cross_entropy_with_logits(logits=output, labels= y), name = 'cross_entropy_loss') *4096 * params.nbStacks * params.batch_size
 		print('--Loss : Done')
-		with tf.name_scope('rmsprop_optimizer'):
-			rmsprop = tf.train.RMSPropOptimizer(lr)
+		with tf.compat.v1.name_scope('rmsprop_optimizer'):
+			rmsprop = tf.compat.v1.train.RMSPropOptimizer(lr)
 		print('--Optim : Done')
-	with tf.name_scope('steps'):
+	with tf.compat.v1.name_scope('steps'):
 		train_steps = tf.Variable(0, trainable=False)
 	with tf.device(GPU):
-		with tf.name_scope('minimize'):
+		with tf.compat.v1.name_scope('minimize'):
 			train_rmsprop = rmsprop.minimize(loss, train_steps)
 		print('--Minimizer : Done')
-	init = tf.global_variables_initializer()
+	init = tf.compat.v1.global_variables_initializer()
 	print('--Init : Done')
 	print('Model generation: ' + str(time()- t_start))
-	with tf.name_scope('loss'):
-		tf.summary.scalar('loss', loss, collections = ['train'])
-	merged_summary_op = tf.summary.merge_all('train')
-	with tf.name_scope('Session'):
+	with tf.compat.v1.name_scope('loss'):
+		tf.compat.v1.summary.scalar('loss', loss, collections = ['train'])
+	merged_summary_op = tf.compat.v1.summary.merge_all('train')
+	with tf.compat.v1.name_scope('Session'):
 		with tf.device(GPU):
-			sess = tf.Session()
+			sess = tf.compat.v1.Session()
 			sess.run(init)
 			print('Session initilized')
 		with tf.device(CPU):
-			saver = tf.train.Saver()
+			saver = tf.compat.v1.train.Saver()
 		with tf.device(GPU):
-			summary_train = tf.summary.FileWriter(process.summarytrain , tf.get_default_graph())
+			summary_train = tf.compat.v1.summary.FileWriter(process.summarytrain , tf.compat.v1.get_default_graph())
 			t_train_start = time()
 			print('Start training')
-			with tf.name_scope('training'):
+			with tf.compat.v1.name_scope('training'):
 				for epoch in range(nepochs):
 					t_epoch_start = time()
 					avg_cost = 0.
 					print('========Training Epoch: ', (epoch + 1))
-					with tf.name_scope('epoch_' + str(epoch)):
+					with tf.compat.v1.name_scope('epoch_' + str(epoch)):
 						for i in range(epochiter):
 							percent = ((i+1)/epochiter )*100
 							num = np.int(20*percent/100)
@@ -91,7 +91,7 @@ if __name__ == '__main__':
 							sys.stdout.flush()
 							y_batch = np.zeros((params.nbStacks, batchSize, 64,64,16))
 							x_batch = np.zeros((batchSize,256,256,3))
-							with tf.name_scope('batch_train'):
+							with tf.compat.v1.name_scope('batch_train'):
 								for k in range(batchSize):
 									item = choice(trainingData)
 									path_img = process.arraypath + item + 'img.npy'

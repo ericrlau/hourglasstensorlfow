@@ -29,11 +29,11 @@ def conv2d(inputs, filters, kernel_size = 1, strides = 1, pad = 'VALID', name = 
 		return :
 			tf.Tensor
 	"""
-	with tf.name_scope(name):
-		kernel = tf.Variable(tf.contrib.layers.xavier_initializer(uniform=False)([kernel_size,kernel_size, inputs.get_shape().as_list()[3], filters]), name= 'weights')
-		conv = tf.nn.conv2d(inputs, kernel, [1,strides,strides,1], padding=pad, data_format='NHWC')
+	with tf.compat.v1.name_scope(name):
+		kernel = tf.Variable(tf.compat.v1.keras.initializers.VarianceScaling(scale=1.0, mode="fan_avg", distribution=("uniform" if False else "truncated_normal"))([kernel_size,kernel_size, inputs.get_shape().as_list()[3], filters]), name= 'weights')
+		conv = tf.nn.conv2d(input=inputs, filters=kernel, strides=[1,strides,strides,1], padding=pad, data_format='NHWC')
 		with tf.device('/cpu:0'):
-			tf.summary.histogram('weights_summary', kernel, collections = ['train'])
+			tf.compat.v1.summary.histogram('weights_summary', kernel, collections = ['train'])
 		return conv
 	
 def convBnrelu(inputs, filters, kernel_size = 1, strides = 1, name = None):
@@ -48,12 +48,12 @@ def convBnrelu(inputs, filters, kernel_size = 1, strides = 1, name = None):
 		return :
 			tf.Tensor
 	"""
-	with tf.name_scope(name):
-		kernel = tf.Variable(tf.contrib.layers.xavier_initializer(uniform=False)([kernel_size,kernel_size, inputs.get_shape().as_list()[3], filters]), name= 'weights')
-		conv = tf.nn.conv2d(inputs, kernel, [1,strides,strides,1], padding='VALID', data_format='NHWC')
+	with tf.compat.v1.name_scope(name):
+		kernel = tf.Variable(tf.compat.v1.keras.initializers.VarianceScaling(scale=1.0, mode="fan_avg", distribution=("uniform" if False else "truncated_normal"))([kernel_size,kernel_size, inputs.get_shape().as_list()[3], filters]), name= 'weights')
+		conv = tf.nn.conv2d(input=inputs, filters=kernel, strides=[1,strides,strides,1], padding='VALID', data_format='NHWC')
 		norm = tf.contrib.layers.batch_norm(conv, 0.9, epsilon=1e-5, activation_fn = tf.nn.relu, scope = '_bn_relu')
 		with tf.device('/cpu:0'):
-			tf.summary.histogram('weights_summary', kernel, collections = ['train'])
+			tf.compat.v1.summary.histogram('weights_summary', kernel, collections = ['train'])
 		return norm
 	
 def convBlock(inputs, numOut, name = 'convBlock'):
@@ -66,11 +66,11 @@ def convBlock(inputs, numOut, name = 'convBlock'):
 			tf.Tensor
 	"""
 	# DIMENSION CONSERVED
-	with tf.name_scope(name):
+	with tf.compat.v1.name_scope(name):
 		norm_1 = tf.contrib.layers.batch_norm(inputs, 0.9, epsilon=1e-5, activation_fn = tf.nn.relu)
 		conv_1 = conv2d(norm_1, int(numOut/2), kernel_size=1, strides=1, pad = 'VALID')
 		norm_2 = tf.contrib.layers.batch_norm(conv_1, 0.9, epsilon=1e-5, activation_fn = tf.nn.relu)
-		pad = tf.pad(norm_2, np.array([[0,0],[1,1],[1,1],[0,0]]))
+		pad = tf.pad(tensor=norm_2, paddings=np.array([[0,0],[1,1],[1,1],[0,0]]))
 		conv_2 = conv2d(pad, int(numOut/2), kernel_size=3, strides=1, pad = 'VALID')
 		norm_3 = tf.contrib.layers.batch_norm(conv_2, 0.9, epsilon=1e-5, activation_fn = tf.nn.relu)
 		conv_3 = conv2d(norm_3, int(numOut), kernel_size=1, strides=1, pad = 'VALID')
@@ -86,7 +86,7 @@ def skipLayer(inputs, numOut, name = 'skipLayer'):
 			tf.Tensor
 	"""
 	# DIMENSION CONSERVED
-	with tf.name_scope(name):
+	with tf.compat.v1.name_scope(name):
 		if inputs.get_shape().as_list()[3] == numOut:
 			return inputs
 		else:
@@ -95,7 +95,7 @@ def skipLayer(inputs, numOut, name = 'skipLayer'):
 	
 def residual(inputs, numOut, name = 'residual'):
 	# DIMENSION CONSERVED
-	with tf.name_scope(name):
+	with tf.compat.v1.name_scope(name):
 		convb = convBlock(inputs, numOut)
 		skip = skipLayer(inputs,numOut)
 		return tf.add_n([convb,skip])

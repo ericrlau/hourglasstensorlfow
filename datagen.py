@@ -571,4 +571,3 @@ class DataGenerator():
 			print('Specify a sample name')
 				
 		
-		

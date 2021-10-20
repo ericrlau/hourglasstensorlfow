@@ -175,7 +175,7 @@ class PredictProcessor():
 			'prediction' node in TensorBoard.
 			In my defence, I implement it to compare computation times with numpy.
 		"""
-		with tf.name_scope(name):
+		with tf.compat.v1.name_scope(name):
 			shape = tensor.get_shape().as_list()
 			if debug:
 				print(shape)
@@ -185,17 +185,17 @@ class PredictProcessor():
 				resh = tf.reshape(tensor[-1,:,:,0], [-1])
 			if debug:
 				print(resh)
-			arg = tf.arg_max(resh,0)
+			arg = tf.argmax(resh,0)
 			if debug:
 				print(arg, arg.get_shape(), arg.get_shape().as_list())
-			joints = tf.expand_dims(tf.stack([arg // tf.to_int64(shape[1]), arg % tf.to_int64(shape[1])], axis = -1), axis = 0)
+			joints = tf.expand_dims(tf.stack([arg // tf.cast(shape[1], dtype=tf.int64), arg % tf.cast(shape[1], dtype=tf.int64)], axis = -1), axis = 0)
 			for i in range(1, shape[-1]):
 				if len(shape) == 3:
 					resh = tf.reshape(tensor[:,:,i], [-1])
 				elif len(shape) == 4:
 					resh = tf.reshape(tensor[-1,:,:,i], [-1])
-				arg = tf.arg_max(resh,0)
-				j = tf.expand_dims(tf.stack([arg // tf.to_int64(shape[1]), arg % tf.to_int64(shape[1])], axis = -1), axis = 0)
+				arg = tf.argmax(resh,0)
+				j = tf.expand_dims(tf.stack([arg // tf.cast(shape[1], dtype=tf.int64), arg % tf.cast(shape[1], dtype=tf.int64)], axis = -1), axis = 0)
 				joints = tf.concat([joints, j], axis = 0)
 			return tf.identity(joints, name = 'joints')
 			
@@ -203,7 +203,7 @@ class PredictProcessor():
 		""" Create Tensor for prediction purposes
 		"""
 		with self.graph.as_default():
-			with tf.name_scope('prediction'):
+			with tf.compat.v1.name_scope('prediction'):
 				self.HG.pred_sigmoid = tf.nn.sigmoid(self.HG.output[:,self.HG.nStack - 1], name= 'sigmoid_final_prediction')
 				self.HG.pred_final = self.HG.output[:,self.HG.nStack - 1]
 				self.HG.joint_tensor = self._create_joint_tensor(self.HG.output[0], name = 'joint_tensor')
@@ -1065,7 +1065,7 @@ class PredictProcessor():
 		print('Restoring weights from: ' + load)
 		t = time()
 		with self.graph.as_default():
-			self.saver = tf.train.Saver(tf.contrib.framework.get_trainable_variables(scope='yolo'))
+			self.saver = tf.compat.v1.train.Saver(tf.contrib.framework.get_trainable_variables(scope='yolo'))
 			self.saver.restore(self.HG.Session, load)
 		print('Trained YOLO Loaded: ', time() - t, ' sec.')
 	
