@@ -35,8 +35,8 @@ import os
 
 from tensorflow.python import training
 
-import tensorflow_addons as tfa
 tf.compat.v1.disable_eager_execution()
+# sess = tf.Session(config=tf.ConfigProto(allow_soft_placement=True, log_device_placement=True))
 
 
 class HourglassModel():
@@ -230,6 +230,7 @@ class HourglassModel():
                 load	: Model to load (None if training from scratch) (see README for further information)
         """
         with tf.compat.v1.name_scope('Session'):
+            # with tf.device(allow_soft_placement=True):
             with tf.device(self.gpu):
                 self._init_session()
                 self._define_saver_summary(summary=False)
