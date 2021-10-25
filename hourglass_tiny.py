@@ -145,7 +145,7 @@ class HourglassModel():
         """
         startTime = time.time()
         print('CREATE MODEL:')
-        with tf.device(self.gpu):
+        with tf.device(self.cpu):
             with tf.compat.v1.name_scope('inputs'):
                 # Shape Input Image - batchSize: None, height: 256, width: 256, channel: 3 (RGB)
                 self.img = tf.compat.v1.placeholder(
@@ -189,7 +189,7 @@ class HourglassModel():
                     self.learning_rate, self.train_step, self.decay_step, self.decay, staircase=True, name='learning_rate')
             lrTime = time.time()
             print('---LR : Done (' + str(int(abs(accurTime-lrTime))) + ' sec.)')
-        with tf.device(self.gpu):
+        with tf.device(self.cpu):
             with tf.compat.v1.name_scope('rmsprop'):
                 self.rmsprop = tf.compat.v1.train.RMSPropOptimizer(
                     learning_rate=self.lr)
@@ -231,7 +231,7 @@ class HourglassModel():
         """
         with tf.compat.v1.name_scope('Session'):
             # with tf.device(allow_soft_placement=True):
-            with tf.device(self.gpu):
+            with tf.device(self.cpu):
                 self._init_session()
                 self._define_saver_summary(summary=False)
                 if load is not None:
@@ -365,7 +365,7 @@ class HourglassModel():
                 load			: Model to load (None if training from scratch) (see README for further information)
         """
         with tf.compat.v1.name_scope('Session'):
-            with tf.device(self.gpu):
+            with tf.device(self.cpu):
                 self._init_weight()
                 self._define_saver_summary()
                 if load is not None:
@@ -407,7 +407,7 @@ class HourglassModel():
             with tf.device(self.cpu):
                 self.saver = tf.compat.v1.train.Saver()
             if summary:
-                with tf.device(self.gpu):
+                with tf.device(self.cpu):
                     self.train_summary = tf.compat.v1.summary.FileWriter(
                         self.logdir_train, tf.compat.v1.get_default_graph())
                     self.test_summary = tf.compat.v1.summary.FileWriter(
